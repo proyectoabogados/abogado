@@ -1,0 +1,15 @@
+### Descripion folder ###
+*** in this folder will be stored the general functions that can be useful anywhere in the application ***
+
+···Examples:
+
+
+ const formatString = string  => {
+    const newString = string.replace($,"")
+    return newString
+  };
+ 
+
+export default {
+formatString
+};

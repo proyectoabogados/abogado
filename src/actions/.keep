@@ -1,4 +1,9 @@
- import * as types from '../constants/actionTypes';
+### Descripion folder ###
+*** in this folder the actions of redux will be stored ***
+
+···Examples:
+
+import * as types from '../constants/actionTypes';
 import callApiData from 'services'
 
  const setData = newData => ({

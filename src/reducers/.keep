@@ -1,0 +1,30 @@
+### Descripion folder ###
+*** in this folder the reducers of redux will be stored ***
+
+···Examples:
+
+import * as types from '../constants/actionTypes';
+
+const initialState = {
+    data: [],
+    list: [],
+};
+
+const General = (state = initialState, action) => {
+    switch (action.type) {
+        case types.FETCH_DATA:
+            return {
+                ...state,
+                data: action.data
+            };
+        case types.FETCH_LIST:
+            return {
+                ...state,
+                list: action.list
+            };
+        default:
+            return state;
+    }
+}
+
+export default General;
