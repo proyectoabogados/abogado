@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Provider } from 'react-redux'
 import { Route, Router } from 'react-router-dom'
 import ScrollToTop from 'components/ScrollToTop'
-import App from './App'
+import { UserLayout } from 'layouts'
 
 export default class Root extends Component {
   render() {
@@ -12,7 +12,7 @@ export default class Root extends Component {
       <Provider store={store}>
         <Router history={history}>
           <ScrollToTop>
-            <Route path="/" component={App} />
+            <Route path="/" component={UserLayout} />
           </ScrollToTop>
         </Router>
       </Provider>
