@@ -1,0 +1,12 @@
+### Descripion folder ###
+*** in this folder will be stored the components that can be reusable anywhere in the application ***
+
+···Examples:
+
+folder : Table
+               index.js --> export main file table
+               header(folder) --> file where the component header will be saved 
+                index.js --> export main file header
+               footer(folder) --> file where the component footer will be saved
+                index.js --> export main file footer
+                otherfile.js --> other file necessary for the construction of the footer component

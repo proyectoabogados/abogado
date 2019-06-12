@@ -1,0 +1,15 @@
+### Descripion folder ###
+*** the calls made to the necessary apis will be defined ***
+
+···Examples:
+
+fetchData() {
+    fetch(`${Constants.URL}/data/`)
+      .then(response => response.json())
+      .then(data => data)
+      .catch(err => err);
+  }
+
+  export default {
+      fetchData,
+  }

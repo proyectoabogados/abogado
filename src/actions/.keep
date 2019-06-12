@@ -1,0 +1,24 @@
+### Descripion folder ###
+*** in this folder the actions of redux will be stored ***
+
+···Examples:
+
+import * as types from '../constants/actionTypes';
+import callApiData from 'services'
+
+ const setData = newData => ({
+    type: types.SET_DATA,
+    data: newDatas,
+  });
+ 
+ const fetchData = () => {
+ return async (dispatch, getState)  => {
+    const data = await callApiData();
+    dispatch(setData(data));
+  };
+}
+
+export default {
+setData,
+fetchData,
+};

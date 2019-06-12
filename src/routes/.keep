@@ -1,0 +1,12 @@
+### Descripion folder ###
+*** components that are parents that are associated with an application route are stored here ***
+
+···Examples:
+
+folder : Marketing
+               index.js --> export main file table
+               table(folder) --> file where the component header will be saved 
+                index.js --> export main file header
+               form(folder) --> file where the component footer will be saved
+                index.js --> export main file footer
+                
