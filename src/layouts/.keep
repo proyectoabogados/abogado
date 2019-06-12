@@ -1,0 +1,8 @@
+### Descripion folder ###
+*** Here the different layouts for each of the views will be defined ***
+
+···Examples:
+
+ LoginLayout.js -> seen when you are not logged in 
+ UserLayout.js -> view when you are logged in
+              

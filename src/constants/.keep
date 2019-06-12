@@ -1,0 +1,8 @@
+### Descripion folder ###
+*** here constants necessary for the operation of the application are stored and thus can be reused in any part of the application that is required ***
+···Examples:
+           config.js (file):
+           const NAME_APPLICATION: 'NAME EXAMPLE'
+           export default {
+               NAME_APPLICATION
+           }
