@@ -3,11 +3,12 @@ import clsx from 'clsx'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
-import NotificationsIcon from '@material-ui/icons/Notifications'
 import MenuIcon from '@material-ui/icons/Menu'
-import Badge from '@material-ui/core/Badge'
 import IconButton from '@material-ui/core/IconButton'
 import { MyContext } from 'common/ConfigProvider'
+import ButtonRunSimulation from 'components/ButtonRunSimulation'
+import LabelTimeSimulation from 'components/LabelTimeSimulation'
+
 import style from './style'
 
 const Header = () => {
@@ -33,11 +34,8 @@ const Header = () => {
         <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
           Dashboard
         </Typography>
-        <IconButton color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
+        <LabelTimeSimulation />
+        <ButtonRunSimulation />
       </Toolbar>
     </AppBar>
   )
