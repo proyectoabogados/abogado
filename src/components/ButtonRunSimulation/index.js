@@ -4,6 +4,8 @@ import PlayIcon from '@material-ui/icons/PlayCircleOutlineRounded'
 
 import { makeStyles } from '@material-ui/core/styles'
 
+import * as forioService from '../../services/forio/forio'
+
 const useStyle = makeStyles(theme => ({
   title: {
     flexGrow: 1,
@@ -16,7 +18,7 @@ const useStyle = makeStyles(theme => ({
 
 const ButtonRunSimulation = () => {
   const classes = useStyle()
-  const runSimulation = () => console.log('aqui')
+  const runSimulation = async () => forioService.createNewRun()
 
   return (
     <Fab
