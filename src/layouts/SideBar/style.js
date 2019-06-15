@@ -36,6 +36,7 @@ const style = makeStyles(theme => ({
     overflow: 'auto',
     flexDirection: 'column',
   },
+  anchorWithOutDecoration: { textDecoration: 'none', color: 'black' },
 }))
 
 export default style
